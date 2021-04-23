@@ -14,9 +14,9 @@ def hourglass(number,space_val):
         mid_point = True
     
     if (mid_point == True and (number < start)):
-        hourglass(number+step,space_val-2)      # recursive function call
+        hourglass(number+step,space_val-2)      # lower half recursive function call
     elif(mid_point == False):
-        hourglass(number-step,space_val+2)      # recursive function call
+        hourglass(number-step,space_val+2)      # upper half recursive function call
     else:
         pass
 
